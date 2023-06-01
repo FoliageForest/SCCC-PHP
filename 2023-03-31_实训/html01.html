@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+
+<body>
+
+</body>
+    <form method="post" action="php01.php">
+        姓名: <input type="text" name="personName" /><br />
+        性别: <input type="radio" name="sex" checked="checked" value="男"/>男
+        <!-- 性别的男和女需要带 value 属性 -->
+        <input type="radio" name="sex" value="女" />女<br />
+        年龄: <input type="text" name="personAge" /><br />
+        联系电话: <input type="text" name="telephoneNumber" /><br />
+        所属社区:
+        <select name="suoShuSheQu" size="1" />
+        <option>朝阳社区</option>
+        <option>朝阳2社区</option>
+        <option>朝阳3社区</option>
+        </select><br />
+        何地来川:
+        <select name="heDiLaiChuan" size="3" />
+            <option>重庆</option>
+            <option>新疆</option>
+            <option>云南</option>
+        </select><br />
+        不适症状:
+        <input type="checkbox" name="buShiZhengZhuang[]" value="流鼻涕" />流鼻涕
+        <!-- 这里也需要带 value 属性 -->
+        <input type="checkbox" name="buShiZhengZhuang[]" value="打喷嚏" />打喷嚏
+        <input type="checkbox" name="buShiZhengZhuang[]" value="嗓子疼" />嗓子疼
+        <input type="checkbox" name="buShiZhengZhuang[]" value="味觉减弱" />味觉减弱
+        <input type="checkbox" name="buShiZhengZhuang[]" value="其他" />其他
+        <input type="checkbox" name="buShiZhengZhuang[]" value="无" />无
+        <br />
+        核酸结果: <input type="radio" name="heSuanJieGuo" />阴性<input type="radio" name="heSuanJieGuo" />阳性<br />
+        <!-- 这里也需要带 value 属性 -->
+        备注: <textarea name="beiZhu" cols="18" rows="5"></textarea><br />
+        <input type="submit" name="tiJiaoAnNiu" />
+        <input type="reset" name="chongZhiAnNiu" />
+    </form>
+</html>

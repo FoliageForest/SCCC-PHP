@@ -1,0 +1,17 @@
+﻿<!-- 用户登录 -->
+<form action="dlpd.php" method="post">
+    <fieldset>
+        <legend>图书管理系统 - 用户登录页面</legend>
+        <p>用户名：<input type="text" name="username"></p>
+        <p>密码：<input type="password" name="pwd"></p>
+        <p>cookie 保存时间：
+            <select name="saveTime">
+            <option value="0">不保存</option>
+            <option value="1">保存2小时</option>
+            <option value="2">保存2天</option>
+            <option value="3">保存2周</option>
+            </select>
+        </p>
+        <p><input type="submit" name="btn" value="登录"></p>
+    </fieldset>
+</form>
