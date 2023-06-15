@@ -4,12 +4,14 @@ class Car {
     var $color;
     var $weight;
 
+    // 构造方法
     function __construct($model, $color, $weight) {
         $this -> model = $model;
         $this -> color = $color;
         $this -> weight = $weight;
     }
 
+    // 析构方法
     function __destruct() {
         echo "您的".$this -> color."车 ".$this -> model." 坏了....快买辆新的吧<br />";
     }
